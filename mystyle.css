@@ -1,0 +1,472 @@
+html{
+  font-size: 62.5%;
+}
+*{
+    padding:0 ;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+}
+p,li{
+  letter-spacing: 0.125em;
+ font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+h1,h2,h3{
+   letter-spacing: 0.15em;
+   font-weight: 500;
+   margin-bottom: 0.5em;
+   font-size: 2rem;
+}
+ul li{
+   list-style: none;
+} 
+.container{
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+    /* utility classes */
+    .lg-heading{
+      font-size: 3.5rem;
+    }
+    .md-heading{
+      font-size: 2.2rem;
+    }
+    .red-text{
+      color: #e63946;
+    }
+    .text-light{
+      color: #f4f4f4 ;
+    }
+    .textblack{
+      color: #333;
+    }
+    .text-gray{
+      color: #555;
+    }
+    .bg-dark{
+      background-color: #263238;
+    }
+    .btn{
+      display: inline-block;
+      padding: 0.5em 1.5em;
+      font-weight: 500;   
+      text-transform: uppercase;
+      color:#e63946;
+    
+    }
+    .btn-primary{
+background-color: white;
+border-radius: 10px;
+margin-top: 20px;
+font-size: 16px;
+    }
+    .btn-secondary{
+      border: 2px  #e63946 solid;
+      border-radius: 1.5em;
+      margin-top: 1rem;
+      margin-left: 3rem;
+      text-decoration: none;
+      
+    }
+    .btn-primary:hover{
+      background-color: #ddd;
+      
+    }
+    .btn-secondary:hover{
+      background-color: #fcf3f2;
+    }
+.myheader{
+   position: relative;
+   background-position: center;
+    height: 95vh;
+    background-image:   url('/image/header-image.jpg');
+    background-repeat: no-repeat;;
+}  
+ .navbar{
+   
+   padding: 1rem;
+}
+ .navbar .navlists{
+   display: inline-block;
+  
+ }
+  .navlists .navli{
+    color: white;
+    float:left;
+margin-top: 1rem ;
+padding: 1rem;
+text-transform: uppercase ;
+   
+ }
+  .navlists .navli a{
+    color: white;
+    font-size: 1.6rem;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    padding-bottom:0.3rem;
+ } 
+
+  .navbar .logo{
+    float:right;
+    color: white;
+    font-size: 3.5rem;
+ }
+ .navbar::after{
+    clear: both;
+    content:'';
+    display: block;
+ }
+ .navbar a:hover{
+   border-bottom: 1px solid white;
+ }
+
+
+
+
+.header-content{
+   position: absolute;
+  margin: 10px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+ .header-content h1{
+   text-transform: uppercase;
+   color: white;
+  font-weight: 700;
+ }
+
+ .header-content p{
+   text-transform: uppercase;
+   font-weight: 500;
+   letter-spacing: 0.15rem;
+   color: white;
+ }
+ .header-content a{
+   color:#e63946 ;
+ }
+ .showcase{
+   background-color: #ddd;
+   padding: 10rem 0;
+ }
+ .row{
+   
+   height: 250px;
+   background-color: white;
+   box-shadow: 0px 0px 20px 0px #777676; 
+   margin-bottom: 10rem;
+ }
+ .row1 .img-box,.row2 .text-box{
+  float: left;
+  width: 50%;
+ }
+ .row2 .img-box,.row1 .text-box{
+  float: right;
+  width: 50%;
+ }
+ .img-box{
+  height: 100%;
+ }
+ .text-box{
+  padding-left: 30px;
+ }
+ .row .img-box img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+                      /* helps in keeping the object in centre */
+        object-fit: cover;
+ }
+
+
+
+
+
+.features{
+  padding: 10rem 0rem;
+}
+.box{
+  text-align: center;
+  display: inline-block;
+  padding: 2rem;
+  color:#fff;
+  box-shadow: 5px 5px 20px 0px #777676;
+}
+.box1{
+  float:left;
+background-color:#263238;
+width: 33.33%;
+}
+.box2{
+  float: left;
+background:linear-gradient(25deg,#d64c75,#ee4758 50%);
+width: 33.3%;
+}
+.box3{
+  float:left;
+background-color: #263238;
+width: 33.3%;
+}
+.boxwraper::after{
+  content: '';
+   display: block;
+  clear: both;
+ }
+ .fa-solid{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+ }
+.social-media-icons{
+  font-size: 2.5rem;
+  color: #fff;
+  
+}
+.fa-brands{
+  margin: 0rem 0.5rem;
+ padding: 1rem;
+}
+.footer{
+  background-color: #263238;
+  text-align: center;
+  height: 100px;
+}
+
+
+
+
+
+
+.itme{
+  float: right;
+  width: 25%;
+  padding: 3rem 6rem;
+  text-align: center;
+}
+
+span{
+  font-size: 40px;
+  font-weight: 500;
+  color: #e63946;
+}
+.itemss::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+.about-us{
+  padding: 5rem 0rem;
+
+}
+.about-heading{
+  border-bottom: #dd545f solid 6px;
+}
+.li-first{
+ float: right;
+ width: 50%;
+}
+.li-second{
+  float: left;
+  width: 50%;
+}
+.impli{
+text-align: center;
+padding: 10px 0px;
+
+}
+
+
+.impli::after{
+  content: '';
+  display: none;
+  clear: both;
+}
+.impli li:before{
+content: '\2713';
+ color: #e63946;
+ margin-right: 1rem;
+}
+ .about-us{
+  
+  height: auto;
+ }
+
+
+.cta-banner{
+  color: #f4f4f4;
+ 
+  background: linear-gradient(25deg,#d64c75,#ee4758 50%);
+  padding: 1rem;
+  box-shadow: 5px 5px 10px #00000057;
+ }
+.cta-button {
+ display: inline-block;
+ color: #f4f4f4;
+ font-weight: 400;
+ font-size: 3rem;
+ border: 4px solid #f4f4f4;
+ text-align: center;
+ padding: 0.3rem 2.5em;
+ letter-spacing: 0.5rem;
+}
+.left{
+  float:left;
+  width: 60%;
+}
+.right{
+  float: right;
+ text-align: right;
+  width: 40%;
+}
+.cta-banner::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.cta-line{
+  font-weight: 700;margin
+  font-size: 2rem;
+  margin-top: 1.6rem;
+}
+
+   
+
+
+.contact-form{
+  padding: 5rem 0rem;
+  background-color: #f7f7f7;
+  
+}
+.contact-form::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+ .form-wraper .company-address{
+  float: left;
+  width: 49%;
+ padding: 0 1.7rem;
+ background-color: #fff  ;
+ height: 600px;
+}
+.form-wraper .form{
+  font-size: 1.6rem;
+  float: right;
+  width: 49%;
+  background-color: #fff;
+  padding: 1rem;
+  height: 600px;
+}
+
+.company-image{
+   max-width: 90% ;
+ 
+}
+.head{
+  text-transform: uppercase;
+
+}
+.form-wraper{
+  background-color: #ddd;
+}
+ .contact-form .form-wraper .company-address i{
+  display: inline-block;
+  margin-right: 1rem;
+}
+.contact-form .form-wraper .company-address h2{
+  display: inline-block;
+}
+ 
+.contact-form .form-wraper .company-address p{
+  margin-bottom: 1rem;
+}
+.form-wraper label{
+  display: block;
+}
+.form-wraper label::after{
+  content: '*';
+  color: #e63946;
+}
+.form-group input{
+  display: block;
+  width: 100%;
+  height: 2rem;
+  padding: 1rem;
+}
+.contact-form .form-wraper .form-group{
+  margin-bottom: 1.2rem;
+}
+.form-wraper .form textarea{
+  height: 250px;
+  width: 100%;
+  padding: 1rem;
+}
+.form-btn{
+  display: block;
+  margin:   0 auto;
+  border: none;
+  outline: none;
+  color: #f4f4f4;
+  background: #e63946;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: 0.5rem 3rem;
+}
+@media(max-width:500px){
+  html{
+    font-size: 50%;
+    width: 100%;
+  }
+  .navbar .navlists,.navbar .logo{
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+   .showcase .row{
+height: auto;
+width: 100%;
+
+}
+  .row .img-box,
+  .row .text-box{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .features .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .features .box2,
+  .features .box3{
+    margin-top: 7rem;
+  }
+  .itemss{
+    float: none;
+    width: 100%;
+    text-align:center ;
+  }
+  .cta-banner .left,.cta-banner .right{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-form .form-wraper .comapny-address{
+   float: none;
+    width: 100%;
+    
+    margin-bottom: 3rem;
+    height: auto;
+  }
+  .contact-form.form-wraper .form{
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+}
